@@ -13,3 +13,7 @@
     width: auto;
     height: auto;
 } 
+
+body.dark-mode #cs-navigation {
+    background-color: red !important;
+}

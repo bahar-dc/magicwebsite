@@ -305,168 +305,171 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #our-approach {
-    padding: 50px 15px;
-    background-color: var(--dark);
-    color: var(--bodyTextColorWhite);
-  }
-  #our-approach .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-  }
-  #our-approach .cs-content {
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #our-approach .cs-topper {
-    font-size: 0.9rem;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: .1em;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-  }
-  #our-approach .cs-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 50rem;
-    margin: 0 0 1rem 0;
-    color: #fff;
-  }
-  #our-approach .cs-text {
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 50rem;
-    margin: 0 0 1rem 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #our-approach .cs-flex {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  #our-approach .cs-left-content {
-    width: 100%;
-    max-width: 35rem;
-    margin: 0 auto;
-  }
-  #our-approach .cs-h3 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: left;
-    margin: 0 0 1.5rem 0;
-    color: #fff;
-  }
-  #our-approach .cs-bullet-list {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  #our-approach .cs-li-text {
-    font-size: 1.1rem;
-    line-height: 1.5em;
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    color: var(--bodyTextColorWhite);
+  #why-choose-1313 {
+    padding: 30px 15px;
     position: relative;
+    z-index: 10;
   }
-  #our-approach .cs-li-marker {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--primary);
-    color: var(--dark);
-    border-radius: 50%;
+  #why-choose-1313 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    flex-shrink: 0;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #our-approach .cs-image-group {
+  #why-choose-1313 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
     width: 100%;
-    max-width: 35rem;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
   }
-  #our-approach .cs-picture {
+  #why-choose-1313 .cs-title {
+    max-width: 20ch;
+  }
+  #why-choose-1313 .cs-text {
+    max-width: 32.625rem;
+  }
+  #why-choose-1313 .cs-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 20px - 40px */
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+  }
+  #why-choose-1313 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #why-choose-1313 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #why-choose-1313 .cs-li-text {
+    /* 14px 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #why-choose-1313 .cs-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* changes to 20px at desktop */
+    gap: 2rem;
+  }
+  #why-choose-1313 .cs-image-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
+  }
+  #why-choose-1313 .cs-picture {
+    width: 100%;
+    height: 100vw;
+    max-height: 25rem;
     display: block;
     position: relative;
-    width: 100%;
-    height: 20rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
   }
-  #our-approach .cs-picture img {
+  #why-choose-1313 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #our-approach {
-    padding: 100px 15px;
+  #why-choose-1313 .cs-container {
+    max-width: 80rem;
   }
-  #our-approach .cs-flex {
+  #why-choose-1313 .cs-content {
     flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.25rem;
   }
-  #our-approach .cs-left-content {
-    max-width: 30rem;
+  #why-choose-1313 .cs-title {
     margin: 0;
   }
-  #our-approach .cs-image-group {
-    flex-direction: row;
-    max-width: none;
-    margin: 0;
-    flex: 1;
+  #why-choose-1313 .cs-flex-group {
+    width: 50%;
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
-  #our-approach .cs-picture {
-    height: 25rem;
+  #why-choose-1313 .cs-ul {
+    flex-direction: row;
+  }
+  #why-choose-1313 .cs-image-group {
+    flex-wrap: nowrap;
   }
 }
-/* Dark Mode - already dark by default */
-
-/* Original our-approach-sec rules to keep for compatibility */
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-1313 {
+    padding: var(--sectionPadding);
+  }
+  #why-choose-1313 .cs-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #why-choose-1313 .cs-ul {
+    max-width: 20.3125rem;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  #why-choose-1313 .cs-image-group {
+    max-width: 52.875rem;
+    align-items: stretch;
+  }
+  #why-choose-1313 .cs-picture {
+    min-height: 25rem;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #why-choose-1313 .cs-title,
+  body.dark-mode #why-choose-1313 .cs-text, body.dark-mode #why-choose-1313 .cs-li-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #why-choose-1313 .cs-h3 {
+    color: var(--secondary);
+  }
+  body.dark-mode #why-choose-1313 .cs-text, body.dark-mode #why-choose-1313 .cs-li-text {
+    opacity: 0.8;
+  }
+}
 .our-approach-sec .what-expect-list {
-  padding-left: 0;
+  padding: 0 0 0 18px !important;
 }
 .our-approach-sec .what-expect-list li {
-  list-style: none;
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  position: relative;
+  margin: 0 0 15px;
 }
 
 /*-- -------------------------- -->
@@ -662,4 +665,3 @@
 }
 
 /*# sourceMappingURL=about.css.map */
-
