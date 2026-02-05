@@ -5,8 +5,8 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #faa342;
-    --primaryLight: #faa342;
+    --primary: #c42635;
+    --primaryLight: #c42635;
     --secondary: #2e404e;
     --secondaryLight: #2e404e;
     --headerColor: #1a1a1a;
@@ -68,7 +68,7 @@
     text-align: center;
   }
   .cs-button-solid:hover {
-    color: #fff;
+    color: var(--secondary) !important;
   }
   .cs-button-solid:hover:before {
     width: 100%;
@@ -762,7 +762,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background-color: var(--medium);
+    background-color: var(--primary);
   }
   body.dark-mode #cs-navigation .cs-drop-icon {
     /* turns it white */

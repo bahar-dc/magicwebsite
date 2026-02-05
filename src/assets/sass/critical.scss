@@ -217,17 +217,7 @@
                 transform 0.3s;
 
             &:hover {
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 transform: translateY(calc(-7 / 16 * 1rem));
-                .cs-picture {
-                    img {
-                        opacity: 0.3;
-                        transform: scale(1.1);
-                    }
-                }
-                .cs-h3 {
-                    color: var(--primaryLight);
-                }
             }
 
             &:before {

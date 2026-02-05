@@ -191,15 +191,7 @@
     transition: box-shadow 0.3s, transform 0.3s;
   }
   #services-343 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transform: translateY(-0.4375rem);
-  }
-  #services-343 .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.1);
-  }
-  #services-343 .cs-item:hover .cs-h3 {
-    color: var(--primaryLight);
   }
   #services-343 .cs-item:before {
     /* border, done in pseudo so it can sit under the picture */

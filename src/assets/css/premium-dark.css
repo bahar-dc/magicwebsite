@@ -8,7 +8,7 @@
   --dark-bg: #000000;         /* Black background */
   --dark-surface: #121212;    /* Slightly lighter black for surfaces */
   --dark-accent: #222222;     /* Dark accent for cards/elements */
-  --primary-gold: #D4AF37;    /* Premium gold accent color */
+  --primary-gold: #c42635;    /* Premium gold accent color */
   --text-white: #FFFFFF;      /* White text */
   --text-light: #E0E0E0;      /* Slightly dimmed white text */
   --text-gold: #D4AF37;       /* Gold text color for accents */
@@ -29,21 +29,21 @@ p, li, span {
 }
 
 .cs-title {
-  color: var(--text-white) !important;
+  color: var(--text-white);
 }
 
 .cs-text {
-  color: var(--text-light) !important;
+  color: var(--text-light);
 }
 
 .cs-topper {
-  color: var(--text-gold) !important;
+  color: var(--text-gold);
 }
 
 /* Buttons */
 .cs-button-solid {
   background-color: var(--primary-gold) !important;
-  color: var(--dark-bg) !important;
+  color: #ffffff !important;
   font-weight: 700;
 }
 
