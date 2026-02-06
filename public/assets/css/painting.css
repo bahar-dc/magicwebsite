@@ -448,7 +448,7 @@
     border-color: rgba(255, 255, 255, 0.1);
   }
   body.dark-mode #services-1667 .cs-faq-item.active {
-    border-color: var(--primary);
+    border-color: var(--text-gold);
   }
   body.dark-mode #services-1667 .cs-faq-item.active .cs-button {
     color: var(--secondary);

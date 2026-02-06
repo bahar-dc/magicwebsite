@@ -1185,6 +1185,9 @@
     opacity: 0.8;
     display: block;
   }
+  #cs-footer-1783 .cs-card-info:hover {
+    color: var(--primary);
+  }
   #cs-footer-1783 .cs-container {
     width: 100%;
     /* reset on tablet */
@@ -1238,6 +1241,9 @@
     line-height: 1.2em;
     text-decoration: none;
     color: var(--bodyTextColorWhite);
+  }
+  #cs-footer-1783 .cs-contact-link:hover {
+    color: var(--primary);
   }
   #cs-footer-1783 .cs-header {
     /* 20px - 25px */
@@ -1319,7 +1325,7 @@
     align-items: center;
   }
   #cs-footer-1783 .cs-bottom-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-footer-1783 .cs-bottom-link:last-of-type:before {
     /* separator */

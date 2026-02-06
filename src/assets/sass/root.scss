@@ -1282,6 +1282,10 @@
           color: var(--bodyTextColorWhite);
           opacity: .8;
           display: block;
+
+          &:hover {
+            color : var(--primary);
+          }
       }
 
       .cs-container {
@@ -1346,6 +1350,10 @@
           line-height: 1.2em;
           text-decoration: none;
           color: var(--bodyTextColorWhite);
+
+          &:hover {
+            color : var(--primary);
+          }
       }
 
       .cs-header {
@@ -1439,7 +1447,7 @@
           align-items: center;
 
           &:hover {
-              color: var(--secondary);
+              color: var(--primary);
           }
 
           &:last-of-type {

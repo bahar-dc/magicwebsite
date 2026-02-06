@@ -8,8 +8,6 @@
 @media only screen and (min-width: 0rem) {
     #sbs {
         padding: 60px 15px;
-
-
         .cs-container {
             display: flex;
             flex-direction: column;
@@ -539,7 +537,7 @@
             }
 
             .cs-faq-item.active {
-                border-color: var(--primary);
+                border-color: var(--text-gold);
             }
 
             .cs-faq-item.active .cs-button {

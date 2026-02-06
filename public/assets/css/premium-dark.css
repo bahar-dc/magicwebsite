@@ -5,9 +5,9 @@
 
 /* Core variables and styles */
 :root {
-  --dark-bg: #000000;         /* Black background */
+  --dark-bg: #131b42;         /* Black background */
   --dark-surface: #121212;    /* Slightly lighter black for surfaces */
-  --dark-accent: #222222;     /* Dark accent for cards/elements */
+  --dark-accent: #131b42;     /* Dark accent for cards/elements */
   --primary-gold: #c42635;    /* Premium gold accent color */
   --text-white: #FFFFFF;      /* White text */
   --text-light: #E0E0E0;      /* Slightly dimmed white text */
@@ -122,9 +122,7 @@ p, li, span {
   color: var(--text-light);
 }
 
-#cs-footer-1783 .cs-bottom {
-  background-color: var(--dark-bg);
-}
+
 
 /* Footer logo sizing */
 #cs-footer-1783 .cs-logo-img {
