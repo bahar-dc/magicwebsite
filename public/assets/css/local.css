@@ -88,6 +88,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    border-radius: 0.25rem;
   }
   #hero-1618 .cs-button-solid:before {
     content: "";
@@ -240,7 +241,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #hero-1618 .cs-icon {
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #hero-1618 .cs-text {
     opacity: 0.8;
@@ -593,8 +594,8 @@
 @media only screen and (min-width: 0rem) {
   #reviews {
     padding: var(--sectionPadding);
-    /* Centers the button */
     text-align: center;
+    background-color: #c42635;
   }
   #reviews .cs-container {
     margin: auto;
@@ -617,7 +618,7 @@
   }
   #reviews .cs-card-group {
     /* 48px - 64px */
-    margin: 0 auto clamp(3rem, 5vw, 4rem);
+    margin: 0 auto;
     padding: 0;
   }
   #reviews .cs-item {

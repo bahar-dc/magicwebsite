@@ -37,7 +37,7 @@ p, li, span {
 }
 
 .cs-topper {
-  color: var(--text-gold);
+  color: var(--primary);
 }
 
 /* Buttons */
@@ -206,6 +206,7 @@ p, li, span {
   display: inline-block;
   padding: 0 1.5rem;
   margin: 0 auto;
+  border-radius: 0.25em;
 }
 
 #cta picture {
@@ -247,3 +248,154 @@ p, li, span {
 #int-hero:before {
   background-color: rgba(0, 0, 0, 0.7);
 } 
+
+
+ #our-approach {
+    padding: 50px 15px;
+    background-color: #c42636;
+    color: #fafbfc;
+}
+#our-approach .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+#our-approach .cs-content {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#our-approach .cs-topper {
+    font-size: 0.9rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #faa342;
+}
+#our-approach .cs-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 50rem;
+    margin: 0 0 1rem 0;
+    color: #fff;
+}
+#our-approach .cs-text {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 0 1rem 0;
+    color: #fafbfc;
+}
+#our-approach .cs-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+#our-approach .cs-left-content {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+#our-approach .cs-h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 1.5rem 0;
+    color: #fff;
+}
+#our-approach .cs-bullet-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#our-approach .cs-li-text {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #fafbfc;
+    position: relative;
+}
+#our-approach .cs-li-marker {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #faa342;
+    color: #003149;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+#our-approach .cs-image-group {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#our-approach .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+#our-approach .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (min-width: 48rem) {
+    #our-approach {
+        padding: 100px 15px;
+    }
+    #our-approach .cs-flex {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    #our-approach .cs-left-content {
+        max-width: 30rem;
+        margin: 0;
+    }
+    #our-approach .cs-image-group {
+        flex-direction: row;
+        max-width: none;
+        margin: 0;
+        flex: 1;
+    }
+    #our-approach .cs-picture {
+        height: 25rem;
+    }
+}

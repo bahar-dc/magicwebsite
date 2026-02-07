@@ -1,0 +1,419 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Professional Commercial Painting Services in Fulham. We transform workspaces and commercial properties with minimal disruption and exceptional quality.">
+        <meta name="keywords" content="">
+        <!-- <link rel="canonical" href="https://magicpainting.co.uk/central-heating/"> -->
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Central Heating | Magic Painting &amp; Decorating Fulham"/>
+        <meta property="og:description" content="Professional Commercial Painting Services in Fulham. We transform workspaces and commercial properties with minimal disruption and exceptional quality."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://magicpainting.co.uk/central-heating/"/>
+        <meta property="og:image" content="/assets/images/aproach-img1.jpg "/>
+        <meta property="og:image:secure_url" content="/assets/images/aproach-img1.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+        
+            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg"/>
+        
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/premium-dark.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/about.css">
+
+
+        <title>Central Heating | Magic Painting &amp; Decorating Fulham</title>
+
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS6MMBLZ');</script>
+   
+ 
+
+    </head>
+    <body class="dark-mode">
+        
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6MMBLZ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/images/logo/image.svg" alt="Magic Painting logo" width="100" height="100" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                   
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/boiler-servicing" class="cs-li-link cs-drop-link">Boiler Servicing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/boiler-installation" class="cs-li-link cs-drop-link">Boiler Installation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/central-heating" class="cs-li-link cs-drop-link">Central Heating</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/commercial-gas-engineer" class="cs-li-link cs-drop-link">Commercial Gas Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+        <main id="main">
+            
+    <!-- ============================================ -->
+    <!--   LANDING                   -->
+    <!-- ============================================ -->
+    <section id="int-hero">
+        <h1 id="home-h">Central Heating</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/new/commercial/hero.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/new/commercial/hero.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/new/commercial/hero.jpg" alt="commercial painting" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+    <!-- ============================================ -->
+    <!--   Side By Side                 -->
+    <!-- ============================================ -->
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/boiler-service-2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/boiler-service-2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/boiler-service-2.jpg" alt="commercial painting" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/heating-installation.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/heating-installation.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/heating-installation.jpg" alt="commercial painting" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Central Heating Solutions</h2>
+                <p class="cs-text">
+                    GB Boilers provides comprehensive central heating services for homes across Esher, Claygate, Chessington and the surrounding Surrey areas. Whether you need a complete new heating system, repairs to an existing installation, or upgrades to improve efficiency, we can help.
+                </p>
+                <p class="cs-text">
+                    A well-designed and properly maintained central heating system keeps your home comfortable throughout the year while keeping energy costs under control. With nearly 20 years of experience, Greg Bradley has the expertise to diagnose problems, recommend solutions and carry out work to the highest standards.
+                </p>
+                <p class="cs-text">
+                    From fixing a single cold radiator to designing and installing a complete heating system for a new extension, no job is too small or too large.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="why-choose-1730">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Our Central Heating Services</h2>
+                <p>We offer a full range of central heating services to keep your home warm and comfortable.</p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                         <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-house.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">New Heating Systems</h3>
+                        <p class="cs-item-text">
+                            Complete central heating installations for new builds, extensions or properties without existing heating. We design systems to suit your property and requirements.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                       <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gym-layer.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Radiator Installation</h3>
+                        <p class="cs-item-text">
+                            Adding new radiators to cold rooms, replacing old inefficient radiators, or upgrading to larger radiators for better heat output. We supply and fit all types and styles.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gym-hour.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Heating Repairs</h3>
+                        <p class="cs-item-text">
+                           Diagnosing and fixing problems with your heating system, from leaking radiators and faulty valves to circulation issues and cold spots.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gym-flower.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Power Flushing</h3>
+                        <p class="cs-item-text">
+                           Cleaning out sludge, rust and debris from your heating system to restore efficiency and prevent damage to your boiler and radiators.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gym-flower.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Thermostatic Controls</h3>
+                        <p class="cs-item-text">
+                           Installing or upgrading thermostats, programmers and thermostatic radiator valves (TRVs) to give you better control over your heating and reduce energy waste.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/gym-flower.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Pipework & Plumbing</h3>
+                        <p class="cs-item-text">
+                           Installing, relocating or repairing heating pipework. We can also conceal exposed pipes for a neater finish.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="sbs-r" style="padding: 100px 15px; background-color: #c42636;">
+        <div class="cs-container" style="max-width:1280px;margin:0 auto">
+            <div class="cs-content mx-600 center-align">
+                <span class="cs-topper" style="color: #D4AF37;">Heating Issues</span>
+                <h2 class="cs-title">Common Central Heating Problems</h2>
+                <p style="margin-bottom: 16px;">
+                   Cold Radiators: If one or more radiators aren't heating up properly, it could be air in the system, a stuck valve, or sludge buildup. We can diagnose and fix the issue quickly.
+                </p>
+                <p style="margin-bottom: 16px;">
+                    Noisy System: Banging, gurgling or whistling noises often indicate air in the system, low water pressure, or limescale buildup. These issues shouldn't be ignored as they can worsen over time.
+                </p>
+                <p style="margin-bottom: 16px;">
+                    Uneven Heating: If some rooms are warm while others stay cold, your system may need balancing, or there could be circulation problems that need addressing.
+                </p>
+                <p style="margin-bottom: 16px;">
+                    Leaking Radiators: Leaks can occur at valves, joints or from the radiator body itself. We can repair or replace leaking components to prevent water damage.
+                </p>
+               <p>
+                    High Energy Bills: An inefficient heating system costs more to run. We can assess your system and recommend improvements to reduce your energy consumption.
+               </p>
+            </div>
+        </div>
+    </section>
+    <section id="cta">
+        <div class="container">
+            <h2 class="title">
+                Need a Reliable Plumber?
+            </h2>
+            <p>
+                Contact GB Boilers today for a free, no-obligation quote. Whether you need a boiler service, installation or repair, we're here to help.
+            </p>
+            <div class="button-row">
+                <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+                <a href="/contact" class="cs-button-solid">Call 07XXX XXX XXX</a>
+            </div>
+        </div>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/boiler-service-hero.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/boiler-service-hero.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/boiler-service-hero.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+        </picture>
+    </section>
+
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+<footer id="cs-footer-1783">
+    <!--Contact Info-->
+    <div class="cs-card-group">
+        <!-- <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span class="cs-card-info">2c Cole Park Rd, Twickenham TW1 1HW</span>
+            </div>
+        </div> -->
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Working Hours</h3>
+                <span class="cs-card-info">Monday - Saturday: 7am-6pm </span>
+                <span class="cs-card-info">Sunday: Closed</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact</h3>
+                <a href="tel:+447939549473" class="cs-card-info">Phone/WhatsApp: +44 7939 549473</a>
+                <a href="mailto:info@magicpainting.co.uk" class="cs-card-info">Email: info@magicpainting.co.uk</a>
+            </div>
+        </div>
+        <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo/image.svg" alt="Magic Painting logo" width="150" height="150">
+            </a>
+            <p class="cs-text">
+                Your trusted partner for residential and commercial painting, and decorating services.                
+            </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/residential-painting">Residential Painting</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/commercial-painting">Commercial Painting</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/furniture-painting">Furniture Painting</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/wallpapering">Wallpapering</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/about">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/contact">Contact</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/privacy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-topper">Call us anytime</span>
+                <a href="tel:+447939549473" class="cs-contact-link">+44 7939 549473</a>
+            </div>
+            <!-- <div class="cs-contact-info">
+                <span class="cs-topper">Visit our location</span>
+                <a href="" class="cs-contact-link">17110 116th Ave SE Unit Renton, WA 38058-5055</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 - <a href="/" class="cs-credit-link">Magic Painting LTD</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="/terms-and-conditions" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="/privacy" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+                                
+
+    </body>
+</html>

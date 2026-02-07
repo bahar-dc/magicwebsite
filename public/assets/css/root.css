@@ -1071,7 +1071,6 @@
 @media only screen and (min-width: 1300px) {
   #cta {
     position: relative;
-    margin-top: 6.25rem;
   }
   #cta .container {
     margin: auto;
@@ -1120,10 +1119,6 @@
     display: none;
   }
 }
-#cta {
-  margin-bottom: 50px;
-}
-
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
@@ -1314,7 +1309,7 @@
     position: relative;
   }
   #cs-footer-1783 .cs-credit-link:hover {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #cs-footer-1783 .cs-bottom-links {
     width: 100%;
@@ -1540,6 +1535,122 @@
   body.dark-mode #content-1450 .cs-text {
     opacity: 0.8;
   }
+}
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.mx-600 {
+  max-width: 700px;
+  margin: auto;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+  display: block;
+}
+
+span.cs-button-solid.small-btn {
+  height: 36px;
+  line-height: 36px;
+  padding-inline: 16px;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.accreditation-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.accred-item {
+  text-align: center;
+  width: 160px;
+}
+.accred-item img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/16;
+  object-fit: contain;
+  background: white;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.area-card {
+  display: block;
+  padding: 30px 25px;
+  background: #182049;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #e43549;
+  transition: all 0.3s ease;
+}
+
+#areas-served {
+  padding: var(--sectionPadding);
+}
+
+#areas-served .cs-container {
+  margin: auto;
+  max-width: 69rem;
+  width: 100%;
+}
+
+.center-align {
+  text-align: center;
+}
+.center-align .cs-title,
+.center-align .cs-text {
+  margin-inline: auto;
+}
+
+#areas-served .cs-title,
+#areas-served .cs-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+#accreditations-ctn {
+  padding: var(--sectionPadding);
+  text-align: center;
+  background-color: #c42635;
+}
+#accreditations-ctn .cs-container {
+  margin: auto;
+  max-width: 69rem;
+  width: 100%;
+}
+#accreditations-ctn .cs-topper {
+  color: #D4AF37;
+}
+
+#reviews .cs-topper {
+  color: #D4AF37;
+}
+
+#our-approach {
+  padding: 50px 15px;
+  background-color: #c42636;
+  color: #fafbfc;
 }
 
 /*# sourceMappingURL=root.css.map */

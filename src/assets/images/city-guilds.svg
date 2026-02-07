@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#fff"/>
+  <rect x="10" y="10" width="180" height="80" rx="5" fill="#1a3c6e"/>
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">CITY &amp; GUILDS</text>
+  <text x="100" y="60" font-family="Arial, sans-serif" font-size="10" fill="#c4a000" text-anchor="middle">QUALIFIED</text>
+  <circle cx="100" cy="75" r="8" fill="#c4a000"/>
+</svg>

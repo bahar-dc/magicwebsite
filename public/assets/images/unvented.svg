@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#fff"/>
+  <rect x="10" y="10" width="180" height="80" rx="5" fill="#2c5aa0"/>
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">UNVENTED</text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">CYLINDERS</text>
+  <text x="100" y="75" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">G3 Qualified</text>
+</svg>

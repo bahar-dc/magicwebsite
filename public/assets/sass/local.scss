@@ -97,6 +97,7 @@
             display: inline-block;
             position: relative;
             z-index: 1;
+            border-radius: 0.25rem;
 
             &:before {
                 content: "";
@@ -278,7 +279,7 @@
             }
 
             .cs-icon {
-                filter: grayscale(1) brightness(1000%);
+               filter: invert(1);
             }
 
             .cs-text {
@@ -717,8 +718,8 @@
 @media only screen and (min-width: 0rem) {
     #reviews {
         padding: var(--sectionPadding);
-        /* Centers the button */
         text-align: center;
+        background-color: #c42635;
 
         .cs-container {
             margin: auto;
@@ -745,7 +746,7 @@
 
         .cs-card-group {
             /* 48px - 64px */
-            margin: 0 auto clamp(3rem, 5vw, 4rem);
+            margin: 0 auto;
             padding: 0;
         }
 
