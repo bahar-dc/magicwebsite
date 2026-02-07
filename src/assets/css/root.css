@@ -1171,6 +1171,7 @@
     line-height: 1.2em;
     margin: 0;
     color: var(--bodyTextColorWhite);
+    margin-bottom: 10px;
   }
   #cs-footer-1783 .cs-card-info {
     font-size: 1rem;

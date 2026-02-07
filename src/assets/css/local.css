@@ -369,9 +369,6 @@
     /* 60px - 136px */
     width: clamp(3.75rem, 10vw, 8.5rem);
   }
-  #sbs .cs-button-solid {
-    margin-top: 2rem;
-  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {

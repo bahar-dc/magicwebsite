@@ -45,6 +45,8 @@ p, li, span {
   background-color: var(--primary-gold) !important;
   color: #ffffff !important;
   font-weight: 700;
+  border-radius: 0.25em;
+  overflow: hidden;
 }
 
 .cs-button-solid:before {
