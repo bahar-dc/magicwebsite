@@ -87,6 +87,8 @@
   #cs-contact #cs-form .cs-button-solid {
     border: none;
     width: 100%;
+    border-radius: 0.25em;
+    overflow: hidden;
   }
   #cs-contact .cs-right-section {
     position: relative;
@@ -267,6 +269,10 @@
 }
 input#file {
   line-height: 4rem;
+}
+
+a.cs-button-solid.blue-btn {
+  background-color: var(--dark) !important;
 }
 
 /*# sourceMappingURL=contact.css.map */

@@ -99,6 +99,8 @@
             .cs-button-solid {
                 border: none;
                 width: 100%;
+                border-radius: 0.25em;
+                overflow: hidden;
             }
         }
 
@@ -322,4 +324,9 @@
 
 input#file {
     line-height: 4rem;
+}
+
+
+a.cs-button-solid.blue-btn{
+    background-color: var(--dark) !important;
 }
