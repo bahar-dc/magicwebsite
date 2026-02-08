@@ -807,10 +807,9 @@
       display: block;
       transition: color 0.3s, background-color 0.3s;
     }
-    #cs-navigation .cs-li-link.cs-drop-link:hover,
-    #cs-navigation .cs-li-link.cs-drop-link:focus {
-      background-color: #f7f7f7;
-      outline: none;
+    #cs-navigation .cs-li-link.cs-drop-link.cs-active,
+    #cs-navigation .cs-li-link.cs-drop-link.cs-active {
+      background-color: var(--primary);
     }
     #cs-navigation .cs-li-link.cs-drop-link:before {
       display: none;
