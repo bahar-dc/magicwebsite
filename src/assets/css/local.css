@@ -714,4 +714,10 @@
   margin-right: auto;
 }
 
+@media only screen and (max-width: 747px) {
+  .accreditation-logos {
+    gap: 20px;
+  }
+}
+
 /*# sourceMappingURL=local.css.map */

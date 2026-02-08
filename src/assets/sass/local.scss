@@ -865,3 +865,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 747px) {
+    .accreditation-logos {
+        gap: 20px;
+    }
+}

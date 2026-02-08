@@ -710,6 +710,7 @@
       color: #fff;
     }
   }
+
   /* Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
     #cs-navigation .cs-dropdown {
@@ -831,6 +832,7 @@
   /*-- -------------------------- -->
   <---     Desktop Navigation     -->
   <--- -------------------------- -*/
+
   /* Small Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
     #cs-navigation {
@@ -954,6 +956,7 @@
       width: 100%;
     }
   }
+
   /* Dark Mode */
   @media only screen and (min-width: 64rem) {
     body.dark-mode #cs-navigation {
@@ -1208,13 +1211,9 @@
     }
 }
 
-
-
 /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
-
-
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -1539,8 +1538,6 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-
- 
 
   #cs-footer-1783 {
 
