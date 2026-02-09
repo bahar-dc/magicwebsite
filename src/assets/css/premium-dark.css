@@ -214,7 +214,7 @@ p, li, span {
 #cta picture {
   position: absolute;
   display: block;
-  width: 100%;
+  width: 50%;
   height: 100%;
   top: 0;
   left: 0;
