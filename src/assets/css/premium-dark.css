@@ -5,9 +5,9 @@
 
 /* Core variables and styles */
 :root {
-  --dark-bg: #131b42;         /* Black background */
+  --dark-bg: #263478;         /* Black background */
   --dark-surface: #121212;    /* Slightly lighter black for surfaces */
-  --dark-accent: #131b42;     /* Dark accent for cards/elements */
+  --dark-accent: #263478;     /* Dark accent for cards/elements */
   --primary-gold: #c42635;    /* Premium gold accent color */
   --text-white: #FFFFFF;      /* White text */
   --text-light: #E0E0E0;      /* Slightly dimmed white text */
