@@ -1,0 +1,683 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GB Boilers">
+        <meta name="keywords" content="">
+        <!-- <link rel="canonical" href="https://magicpainting.co.uk/about/"> -->
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="About Us | GB Boilers"/>
+        <meta property="og:description" content="GB Boilers"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://magicpainting.co.uk/about/"/>
+        <meta property="og:image" content="/assets/images/aproach-img1.jpg "/>
+        <meta property="og:image:secure_url" content="/assets/images/aproach-img1.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+        
+            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg"/>
+        
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/premium-dark.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <style>
+        /* Inline CSS for Our Approach section to ensure proper display in production */
+        #our-approach {
+            padding: 50px 15px;
+            background-color: #c42636;
+            color: #fafbfc;
+        }
+        #our-approach .cs-container {
+            width: 100%;
+            max-width: 80rem;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        #our-approach .cs-content {
+            width: 100%;
+            max-width: 60rem;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #our-approach .cs-topper {
+            font-size: 0.9rem;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: inherit;
+            letter-spacing: .1em;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #faa342;
+        }
+        #our-approach .cs-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            max-width: 50rem;
+            margin: 0 0 1rem 0;
+            color: #fff;
+        }
+        #our-approach .cs-text {
+            font-size: 1.2rem;
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 50rem;
+            margin: 0 0 1rem 0;
+            color: #fafbfc;
+        }
+        #our-approach .cs-flex {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        #our-approach .cs-left-content {
+            width: 100%;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+        #our-approach .cs-h3 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-align: left;
+            margin: 0 0 1.5rem 0;
+            color: #fff;
+        }
+        #our-approach .cs-bullet-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        #our-approach .cs-li-text {
+            font-size: 1.1rem;
+            line-height: 1.5em;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #fafbfc;
+            position: relative;
+        }
+        #our-approach .cs-li-marker {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #faa342;
+            color: #003149;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        #our-approach .cs-image-group {
+            width: 100%;
+            max-width: 35rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        #our-approach .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 20rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        #our-approach .cs-picture img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        @media only screen and (min-width: 48rem) {
+            #our-approach {
+                padding: 100px 15px;
+            }
+            #our-approach .cs-flex {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 3rem;
+            }
+            #our-approach .cs-left-content {
+                max-width: 30rem;
+                margin: 0;
+            }
+            #our-approach .cs-image-group {
+                flex-direction: row;
+                max-width: none;
+                margin: 0;
+                flex: 1;
+            }
+            #our-approach .cs-picture {
+                height: 25rem;
+            }
+        }
+    </style>
+
+
+        <title>About Us | GB Boilers</title>
+
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS6MMBLZ');</script>
+   
+ 
+
+    </head>
+    <body class="dark-mode">
+        
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6MMBLZ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="100" height="100" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/boiler-servicing" class="cs-li-link cs-drop-link">Boiler Servicing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/boiler-installation" class="cs-li-link cs-drop-link">Boiler Installation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/central-heating" class="cs-li-link cs-drop-link">Central Heating</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/commercial-gas-engineer" class="cs-li-link cs-drop-link">Commercial Gas Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Areas
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-esher" class="cs-li-link cs-drop-link">Plumber in Esher</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-claygate" class="cs-li-link cs-drop-link">Plumber in Claygate</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-chessington" class="cs-li-link cs-drop-link">Plumber in Chessingto</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cs-li">
+                        <a href="/about" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+        <main id="main">
+            
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About GB Boilers</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/image-11.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/image-11.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/image-11.webp" alt="Magic Painting and Decorating" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/image-10.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/image-10.webp">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/image-10.webp" alt="painter working" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gas-engineer.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gas-engineer.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/gas-engineer.jpg" alt="painting project" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Our Story</h2>
+                <p class="cs-text">
+                    GB Boilers was established by Greg Bradley, who learnt his trade back in Herefordshire, where he did an apprenticeship with a family member. This traditional foundation in craftsmanship and hands-on training has shaped everything we do.
+                </p>
+                <p class="cs-text">
+                    For nearly 20 years, GB Boilers has prided itself on honesty, reliability and doing the best job for the customer. We believe that good work speaks for itself, and our reputation has been built through word-of-mouth recommendations from satisfied customers.
+                </p>
+                <p class="cs-text">
+                    Today, we continue to serve homeowners and businesses across Esher, Claygate, Chessington and the surrounding Surrey areas with the same commitment to quality that has defined our business from the start.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Our Approach                  -->
+    <!-- ============================================ -->
+
+    <section id="our-approach" class="our-approach-sec">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">GB BOILERS</span>
+                <h2 class="cs-title">Our Approach</h2>
+                <p class="cs-text">
+                   We believe in straightforward, honest service. When you call GB Boilers, you'll speak directly with Greg, who will listen to your needs, provide clear advice and give you an honest quote. No sales pressure, no unnecessary upselling — just practical solutions that work for you.
+                </p>
+            </div>
+            <div class="cs-flex">
+                <div class="cs-left-content">
+                    <h3 class="cs-h3">What You Can Expect</h3>
+                    <ul class="cs-bullet-list">
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Clear communication from first call to job completion
+                        </li>
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Honest advice about what you actually need
+                        </li>
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Upfront pricing with no hidden costs or surprises
+                        </li>
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Punctual, reliable service that respects your time
+                        </li>
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Clean, tidy work with minimal disruption to your home
+                        </li>
+                        <li class="cs-li-text">
+                            <span class="cs-li-marker">◦</span>
+                            Full certification and documentation for all gas work
+                        </li>
+                    </ul>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image-08.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image-08.webp">
+                        <img loading="lazy" decoding="async" src="/assets/images/image-08.webp" alt="painting project" width="413" height="400">
+                    </picture>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/image-09.webp">
+                        <source media="(min-width: 601px)" srcset="/assets/images/image-09.webp">
+                        <img loading="lazy" decoding="async" src="/assets/images/image-09.webp" width="413" height="400">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Our Values                    -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1730">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Our Values</h2>
+                <p>These are the principles that guide everything we do at GB Boilers:</p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="32" height="32">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Honesty</h3>
+                        <p class="cs-item-text">
+                            We tell you what you need to know, not what we think you want to hear. If a repair will fix the problem, we won't recommend a replacement. If your boiler is beyond economical repair, we'll tell you straight.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                   <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Reliability</h3>
+                        <p class="cs-item-text">
+                            When we say we'll be there, we'll be there. We understand that your time is valuable, and we respect that by turning up when we say we will and completing work when we say we will.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                     <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Quality</h3>
+                        <p class="cs-item-text">
+                            We take pride in our work and don't cut corners. Every job, whether it's a simple service or a complete installation, receives the same attention to detail and commitment to doing things properly.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Safety</h3>
+                        <p class="cs-item-text">
+                           As a Gas Safe registered engineer, safety is at the heart of everything we do. We follow all regulations and best practices to ensure your home and family are protected.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="accreditations-ctn">
+        <div class="cs-container">
+            <div class="mb-60 center-align">
+                <div class="cs-topper">Qualifications</div>
+                <h2 class="cs-title">Our Accreditations</h2>
+                <div class="mx-600">
+                <p>
+                    We hold industry-recognised certifications and qualifications to ensure the highest standards of safety and workmanship.
+                </p>
+                </div>
+            </div>
+            <div class="accreditation-logos">
+                <div class="accred-item">
+                    <img alt="Gas Safe Registered" src="/assets/images/gas-safe.svg" />
+                    <p>Gas Safe Registered</p>
+                </div>
+                <div class="accred-item">
+                    <img
+                    alt="City &amp; Guilds"
+                    src="/assets/images/city-guilds.svg"
+                    />
+                    <p>City & Guilds</p>
+                </div>
+                <div class="accred-item">
+                    <img
+                    alt="Worcester Bosch"
+                    src="/assets/images/unvented.svg"
+                    />
+                    <p>Unvented Cylinders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cta">
+        <div class="container">
+            <h2 class="title">
+                Need a Reliable Plumber?
+            </h2>
+            <p>
+                Contact GB Boilers today for a free, no-obligation quote. Whether you need a boiler service, installation or repair, we're here to help.
+            </p>
+            <div class="button-row">
+                <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+                <a href="/contact" class="cs-button-solid">Call 07XXX XXX XXX</a>
+            </div>
+        </div>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/boiler-service-hero.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/boiler-service-hero.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/boiler-service-hero.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+        </picture>
+    </section>
+
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+<footer id="cs-footer-1783">
+    <!--Contact Info-->
+    <div class="cs-card-group">
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span>2c Cole Park Rd, Twickenham TW1 1HW</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Working Hours</h3>
+                <span>Monday - Friday: 8am - 6pm </span> <br>
+                <span>Saturday: 9am - 1pm </span><br>
+                <span>Sunday: Closed</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact</h3>
+                <a href="tel:+447939549473" class="cs-card-info">Phone/WhatsApp: +44 7939 549473</a>
+                <a href="mailto:info@gbboilers.co.uk" class="cs-card-info">Email: info@gbboilers.co.uk</a>
+            </div>
+        </div>
+        <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="150" height="150">
+            </a>
+            <p class="cs-text">
+                Your trusted partner for residential and commercial painting, and decorating services.                
+            </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+           <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-servicing">Boiler Servicing</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-installation">Boiler Installation</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/central-heating">Central Heating</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/commercial-gas-engineer">Commercial Gas Services</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/about">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/contact">Contact</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/privacy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-topper">Call us anytime</span>
+                <a href="tel:+447939549473" class="cs-contact-link">+44 7939 549473</a>
+            </div>
+            <div class="cs-contact-info">
+                <span class="cs-topper">Visit our location</span>
+                <span>17110 116th Ave SE Unit Renton, WA 38058-5055</span>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 - <a href="/" class="cs-credit-link">GB Boilers</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="/terms-and-conditions" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="/privacy" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+    </body>
+     <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "GB Boilers",
+        "image": "https://www.gbboilers.co.uk/assets/images/logo/gbboilers-logo.svg",
+        "@id": "",
+        "url": "https://www.gbboilers.co.uk/",
+        "telephone": "07XXX XXX XXX",
+        "priceRange": "££",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[Your Business Address]",
+            "addressLocality": "Esher",
+            "postalCode": "[Your Postcode]",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "[Your Latitude]",
+            "longitude": "[Your Longitude]"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "[Link to your Google Business Profile]"
+        ]
+        }
+    </script>
+</html>

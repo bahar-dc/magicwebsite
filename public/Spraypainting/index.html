@@ -1,0 +1,661 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Spray Painter in Amersham and the surrounding area. We also provide professional plastering services. Contact us now for a free quote.">
+        <meta name="keywords" content="">
+        <!-- <link rel="canonical" href="https://magicpainting.co.uk/Spraypainting/"> -->
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Spray Painting | Painter in Amersham"/>
+        <meta property="og:description" content="Spray Painter in Amersham and the surrounding area. We also provide professional plastering services. Contact us now for a free quote."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://magicpainting.co.uk/Spraypainting/"/>
+        <meta property="og:image" content="/assets/images/aproach-img1.jpg "/>
+        <meta property="og:image:secure_url" content="/assets/images/aproach-img1.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+        
+            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg"/>
+        
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/premium-dark.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/painting.css">
+
+
+        <title>Spray Painting | Painter in Amersham</title>
+
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS6MMBLZ');</script>
+   
+ 
+
+    </head>
+    <body class="dark-mode">
+        
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6MMBLZ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="100" height="100" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/boiler-servicing" class="cs-li-link cs-drop-link">Boiler Servicing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/boiler-installation" class="cs-li-link cs-drop-link">Boiler Installation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/central-heating" class="cs-li-link cs-drop-link">Central Heating</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/commercial-gas-engineer" class="cs-li-link cs-drop-link">Commercial Gas Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Areas
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-esher" class="cs-li-link cs-drop-link">Plumber in Esher</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-claygate" class="cs-li-link cs-drop-link">Plumber in Claygate</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-chessington" class="cs-li-link cs-drop-link">Plumber in Chessingto</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cs-li">
+                        <a href="/about" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+        <main id="main">
+            
+
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Professional Spray Painting Services</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/inner-banner.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/inner-banner.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/inner-banner.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+       <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/about-img2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/about-img2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/about-img1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/about-img1.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/about-img1.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">PAINTING</span>
+                <h2 class="cs-title">At Magic</h2>
+                <p class="cs-text">
+                    we provide a wide range of expert spray painting services designed to meet all your furniture and kitchen needs. Whether you're looking to refresh your kitchen cabinets or revive a piece of furniture, our spray painting service delivers outstanding results with a flawless finish. We also offer comprehensive repair services, perfect for restoring damaged items. You can customise the colour, sheen level, and even handles to get the exact look you desire. 
+                </p>
+
+               
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1667">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/spray-service-img.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/spray-service-img.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/spray-service-img.jpg" alt="people standing" width="605" height="690">
+            </picture>
+            <!--SVG Graphic-->
+            <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">At Magic Painting</h2>
+            <p class="cs-text">
+                For your convenience, we provide pick-up and delivery, so you don't have to worry about transport. Transform any room in your home with ease—contact us today to learn more about our services.
+            </p>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        
+                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                        <span class="cs-button-text">
+                            Expert Colour Matching
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            We offer precise colour matching to ensure you get the perfect hue for your project. Whether you're envisioning something bold or more subdued, we can create the exact shade you need. Simply provide a sample, and we’ll handle the rest.
+                        </p>
+                        
+                        
+                    </div>
+                </li>
+              
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <svg  class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M162.4 6c-1.5-3.6-5-6-8.9-6h-19c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6H48C21.5 0 0 21.5 0 48V224v22.4V256H9.6 374.4 384v-9.6V224 48c0-26.5-21.5-48-48-48H230.5c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288v32c0 35.3 28.7 64 64 64h64v64c0 35.3 28.7 64 64 64s64-28.7 64-64V384h64c35.3 0 64-28.7 64-64V288H0zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+                        <span class="cs-button-text">
+                            Comprehensive Spray Painting Solutions
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Magic Painting offers professional spray painting services for furniture and cabinetry, catering to designers, architects, developers, and homeowners alike. Our spray painting services can refresh your kitchen units or furniture, giving them a brand-new look. In addition, our repair services are ideal for restoring damaged items, all while giving you full control over the colour, sheen, and finish. We also offer free local pick-up and delivery, ensuring a seamless experience from start to finish.
+                        </p>
+                        <p class="cs-text">
+                            For those larger projects, we provide on-site spray painting services, ensuring minimal disruption and maximum efficiency. While we specialise in spray painting, we also offer hand painting options for those who prefer a more personal touch. We even stock a range of designer, low-VOC, self-leveling paint for the DIY enthusiast. Get in touch with us today to find out more.
+                        </p>
+                        
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">                        
+                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                        <span class="cs-button-text">
+                            Furniture Restoration Expertise
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            At Magic Painting, we offer a range of professional restoration services including furniture repairs, French polishing, lacquer finishes, and stain treatments. Whether you're looking to refresh kitchen cabinetry or restore antique furniture, we’ve got the expertise to deliver superior results. We also provide polishing and repair services for doors, panels, and handrails. Contact us for further details on how we can restore and enhance your furniture.
+                        </p>
+                        
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">                        
+                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64H576V256H384V224H320v48c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H368c-26.5 0-48 21.5-48 48v80H243.1 177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg>
+                        <span class="cs-button-text">
+                            Committed to Sustainability
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">At Magic Painting, we're passionate about sustainability. Our services focus on restoring, repairing, reusing, and repurposing your existing furniture to help reduce waste and environmental impact. Let us help you refresh what you already have.</p>
+
+
+
+                        
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        
+                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 48c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16h80V400c0-26.5 21.5-48 48-48s48 21.5 48 48v64h80c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64zM0 64C0 28.7 28.7 0 64 0H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm88 40c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V104zM232 88h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V104c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H104c-8.8 0-16-7.2-16-16V232zm144-16h48c8.8 0 16 7.2 16 16v48c0 8.8-7.2 16-16 16H232c-8.8 0-16-7.2-16-16V232c0-8.8 7.2-16 16-16z"/></svg>
+                        <span class="cs-button-text">
+                            Custom Colour Matching
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            In our workshop, we offer a wide range of colours to choose from. If you have a specific shade in mind, we also provide custom colour matching to create your perfect hue. Whether you’re dreaming of a vibrant pop of colour or a soft neutral, we can make it happen. Just bring in a sample or share your vision, and we'll take care of the rest.
+                        </p>
+                        
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        
+                        
+                        <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0L352 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64L64 192c-35.3 0-64-28.7-64-64L0 64zM160 352c0-17.7 14.3-32 32-32l0-16c0-44.2 35.8-80 80-80l144 0c17.7 0 32-14.3 32-32l0-32 0-90.5c37.3 13.2 64 48.7 64 90.5l0 32c0 53-43 96-96 96l-144 0c-8.8 0-16 7.2-16 16l0 16c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-128z"/></svg>
+                        <span class="cs-button-text">
+                            Kitchen Respraying Services
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            If you're looking for a sustainable and cost-effective way to update your kitchen, kitchen respraying is the perfect solution. Our service can transform your kitchen's look without the waste of a full renovation. Explore our portfolio of successful kitchen resprays to see the remarkable results we've achieved.
+                        </p>
+                        
+                    </div>
+                </li>
+            </ul>
+            <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
+        </div>
+    </div>
+</section>
+                                
+
+
+                                
+
+<!-- ============================================ -->
+<!--                  Why Choose                  -->
+<!-- ============================================ -->
+
+<section id="why-choose-37">
+    <div class="cs-container">
+        <!-- Right Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/why-choose.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/why-choose.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why-choose.jpg" alt="Why Choose Magic Painting" width="858" height="781">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Why Choose Us</span> -->
+            <h2 class="cs-title">Our Story</h2>
+            <p class="cs-text">
+                At Magic Painting, we’re proud to be a trusted provider of professional spray painting services. We are committed to delivering high-quality results while always prioritising customer satisfaction. Our mission is to offer exceptional service at an affordable price, ensuring every client is delighted with their experience. Our vision is to become a leader in the spray painting industry, and we’re committed to achieving this goal one project at a time.
+            </p>
+
+            
+            <a href="https://magicpainting.co.uk/contact" class="cs-button-solid">Request A Quote Today</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<!-- <section id="logos-857">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">We use superior products</span>
+            <h2 class="cs-title">We guarantee a perfect result.</h2>
+        </div>
+        <div class="cs-logo-group">
+            
+            <img class="cs-logo" src="/assets/images/coat-logo.png" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+            <img class="cs-logo" src="/assets/images/lg-paint.svg" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+            <img class="cs-logo" src="/assets/images/crown-paint.svg" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+            <img class="cs-logo" src="/assets/images/dulux.png" alt="logo" width="150" height="61" loading="lazy" decoding="async">            
+            <img class="cs-logo" src="/assets/images/farrow.png" alt="logo" width="150" height="55" loading="lazy" decoding="async">            
+        </div>
+    </div>
+</section> -->
+
+<!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="cs-container">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">Words From Our Customers</h2>
+            <p class="cs-text">
+                Dimitri and Daniel completed a first rate redecoration in very quick time to a very high standard. They efficient, were tidy and a pleasure to work with and would definitely use them again.
+
+
+            </p>
+            <ul class="cs-card-group">
+                <!-- Review 1 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80"/>
+                    <p class="cs-item-p">
+                        "Maciek completed a top-quality redecoration for us in record time. He was efficient, tidy, and truly a pleasure to work with. We will definitely be hiring him again."
+
+                    </p>
+                    <span class="cs-reviewer">
+                        Robert Hale,
+
+                        <span class="cs-desc">Homeowner</span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16"/>
+                </li>
+                <!-- Review 2 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80"/>
+                    <p class="cs-item-p">
+                        "Maciek was brilliant. Reasonably priced, quick, and the result was excellent. He even returned to do some additional work at no cost and made sure everything was perfect. Highly recommended."
+
+                    </p>
+                    <span class="cs-reviewer">
+                        Robert Hale
+
+                        <span class="cs-desc">Homeowner</span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16"/>
+                </li>
+            </ul>
+            <!-- <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a> -->
+        </div>
+    </section>
+                                
+            
+
+<script>
+
+    
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+                                
+</script>
+                                
+                                
+
+    <!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+    <div class="container">
+        <h2 class="title">
+            Need a Reliable Plumber?
+        </h2>
+        <p>
+            Contact GB Boilers today for a free, no-obligation quote. Whether you need a boiler service, installation or repair, we're here to help.
+        </p>
+        <div class="button-row">
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact" class="cs-button-solid">Call 07XXX XXX XXX</a>
+        </div>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/image-11.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/image-11.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/image-11.webp" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+    </picture>
+</section>
+
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+<footer id="cs-footer-1783">
+    <!--Contact Info-->
+    <div class="cs-card-group">
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span>2c Cole Park Rd, Twickenham TW1 1HW</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Working Hours</h3>
+                <span>Monday - Friday: 8am - 6pm </span> <br>
+                <span>Saturday: 9am - 1pm </span><br>
+                <span>Sunday: Closed</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact</h3>
+                <a href="tel:+447939549473" class="cs-card-info">Phone/WhatsApp: +44 7939 549473</a>
+                <a href="mailto:info@gbboilers.co.uk" class="cs-card-info">Email: info@gbboilers.co.uk</a>
+            </div>
+        </div>
+        <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="150" height="150">
+            </a>
+            <p class="cs-text">
+                Your trusted partner for residential and commercial painting, and decorating services.                
+            </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+           <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-servicing">Boiler Servicing</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-installation">Boiler Installation</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/central-heating">Central Heating</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/commercial-gas-engineer">Commercial Gas Services</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/about">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/contact">Contact</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/privacy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-topper">Call us anytime</span>
+                <a href="tel:+447939549473" class="cs-contact-link">+44 7939 549473</a>
+            </div>
+            <div class="cs-contact-info">
+                <span class="cs-topper">Visit our location</span>
+                <span>17110 116th Ave SE Unit Renton, WA 38058-5055</span>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 - <a href="/" class="cs-credit-link">GB Boilers</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="/terms-and-conditions" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="/privacy" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+    </body>
+     <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "GB Boilers",
+        "image": "https://www.gbboilers.co.uk/assets/images/logo/gbboilers-logo.svg",
+        "@id": "",
+        "url": "https://www.gbboilers.co.uk/",
+        "telephone": "07XXX XXX XXX",
+        "priceRange": "££",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[Your Business Address]",
+            "addressLocality": "Esher",
+            "postalCode": "[Your Postcode]",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "[Your Latitude]",
+            "longitude": "[Your Longitude]"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "[Link to your Google Business Profile]"
+        ]
+        }
+    </script>
+</html>

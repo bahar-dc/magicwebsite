@@ -1,0 +1,512 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GB Boilers">
+        <meta name="keywords" content="">
+        <!-- <link rel="canonical" href="https://magicpainting.co.uk/putney/"> -->
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Painter in Putney | GB Boilers"/>
+        <meta property="og:description" content="GB Boilers"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://magicpainting.co.uk/putney/"/>
+        <meta property="og:image" content="/assets/images/aproach-img1.jpg "/>
+        <meta property="og:image:secure_url" content="/assets/images/aproach-img1.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+        
+            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg"/>
+        
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/premium-dark.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/landing.css">
+
+
+        <title>Painter in Putney | GB Boilers</title>
+
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KS6MMBLZ');</script>
+   
+ 
+
+    </head>
+    <body class="dark-mode">
+        
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6MMBLZ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="100" height="100" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/boiler-servicing" class="cs-li-link cs-drop-link">Boiler Servicing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/boiler-installation" class="cs-li-link cs-drop-link">Boiler Installation</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/central-heating" class="cs-li-link cs-drop-link">Central Heating</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/commercial-gas-engineer" class="cs-li-link cs-drop-link">Commercial Gas Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Areas
+                            <img class="cs-drop-icon" src="../../assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-esher" class="cs-li-link cs-drop-link">Plumber in Esher</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-claygate" class="cs-li-link cs-drop-link">Plumber in Claygate</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/plumber-in-chessington" class="cs-li-link cs-drop-link">Plumber in Chessingto</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cs-li">
+                        <a href="/about" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+        <main id="main">
+            
+
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Painter in Putney</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/aproach-img2.jpeg">
+            <source media="(min-width: 601px)" srcset="/assets/images/aproach-img2.jpeg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/aproach-img2.jpeg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+   <!-- ============================================ -->
+<!--                  Services img left                   -->
+<!-- ============================================ -->
+
+<section id="services-564">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/landing-img1.jpeg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/landing-img1.jpeg">
+            <img loading="lazy" decoding="async" src="/assets/images/landing-img1.jpeg" alt="computer" width="630" height="528" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Small Group Training</span> -->
+            <h2 class="cs-title">Transform Your Space with <span class="cs-color">Exceptional Results</span></h2>
+            <!-- <h3 class="cs-h3">Process Engineering</h3> -->
+            <p class="cs-text">
+                Are you looking for a painter and decorator who can bring your vision to life? Look no further. Our team of experienced professionals at Magic Painting is dedicated to delivering exceptional results, taking pride in our attention to detail, and mastering all materials and techniques. 
+            </p>
+            <p class="cs-text">With a passion for bringing a showroom finish to every project, we're the perfect choice for both commercial and residential painting and decorating needs.</p>
+           
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services  img right                  -->
+<!-- ============================================ -->
+
+<section id="services-563">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/service-img2.jpeg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/service-img2.jpeg">
+            <img loading="lazy" decoding="async" src="/assets/images/service-img2.jpeg" alt="computer" width="630" height="528" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Small Group Training</span> -->
+            <h2 class="cs-title">Commercial Painting <span class="cs-color">Services</span></h2>
+            <!-- <h3 class="cs-h3">Process Engineering</h3> -->
+            <p class="cs-text">
+                Whether you're a business owner looking to revamp your office space or a property manager seeking to enhance the curb appeal of your building, our commercial painting services are tailored to meet your specific needs. 
+            </p>
+            <p class="cs-text">
+                Our team is experienced in working with various materials and techniques, ensuring that your project is completed efficiently and effectively. 
+            </p>
+            <p class="cs-text">
+                From interior painting to exterior coatings, we'll work with you to create a space that reflects your brand and enhances your reputation.
+            </p>
+           
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+                  
+
+   <!-- ============================================ -->
+<!--                  Services img left                   -->
+<!-- ============================================ -->
+
+<section id="services-564">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="/assets/images/about-col-img2.jpeg">
+           <!--Tablet and above Image-->
+           <source media="(min-width: 601px)" srcset="/assets/images/about-col-img2.jpeg">
+           <img loading="lazy" decoding="async" src="/assets/images/about-col-img2.jpeg" alt="computer" width="630" height="528" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Small Group Training</span> -->
+            <h2 class="cs-title">Residential Painting <span class="cs-color">Services</span></h2>
+            <!-- <h3 class="cs-h3">Process Engineering</h3> -->
+            <p class="cs-text">
+                At home, a fresh coat of paint can completely transform the ambiance and value of your property. 
+            </p>
+            <p class="cs-text">Our residential painting services are designed to provide you with a showroom-quality finish that you'll love. From living rooms to bedrooms, kitchens to bathrooms, we'll work with you to choose the perfect colours and finishes to match your style and budget. </p>
+            <p class="cs-text">
+                Whether you're looking for a subtle refresh or a full-scale renovation, our team is equipped to handle any project.
+            </p>
+           
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1712">
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+                srcset="/assets/images/landing-img3.jpeg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+                srcset="/assets/images/landing-img3.jpeg">
+        <img loading="lazy" decoding="async"
+                src="/assets/images/landing-img3.jpeg"
+                alt="busines meeting" width="522" height="609" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-wrapper">
+            <div class="cs-content">
+                <span class="cs-topper">Our Key</span>
+                <h2 class="cs-title">What sets us apart from other companies?</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">01</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Attention to Detail</h3>
+                        <p class="cs-item-text">
+                            We understand that every project is unique, and we take the time to listen to your specific needs and goals. Our team is meticulous in their work, ensuring that every brushstroke, every coat, and every finishing touch is perfect. We're committed to delivering exceptional results that exceed your expectations.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">02</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Hassle-free process</h3>
+                        <p class="cs-item-text">
+                            We understand that renovating can be a daunting task, which is why we're committed to making the process as easy and hassle-free as possible. From the initial consultation to project completion, we'll keep you informed every step of the way. Our team will:
+                        </p>
+                        <ul class="step-content-list">
+                            <li>Work around your schedule to minimise disruption</li>
+                            <li>Provide a detailed quote and timeline for your project</li>
+                            <li>Clean up thoroughly after each day's work</li>
+                            <li>Ensure that all necessary permits and licenses are obtained</li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">03</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Expertise in Materials and Techniques</h3>
+                        <p class="cs-item-text">
+                            Our team has extensive experience working with various materials and we’re experts in applying these materials using the various techniques, from traditional brushwork to modern spray applications. Whether you have a specific material or technique in mind, we can help you achieve the desired look.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">04</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Passion for Showroom Finishes</h3>
+                        <p class="cs-item-text">
+                            At Magic Painting, we're passionate about bringing a showroom finish to every project. We understand that a well-finished paint job can elevate the aesthetic of any space, making it look polished and professional. Our team takes pride in their work, ensuring that every surface is smooth, even, and free of imperfections.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+                                
+
+    <!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+    <div class="container">
+        <h2 class="title">
+            Need a Reliable Plumber?
+        </h2>
+        <p>
+            Contact GB Boilers today for a free, no-obligation quote. Whether you need a boiler service, installation or repair, we're here to help.
+        </p>
+        <div class="button-row">
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact" class="cs-button-solid">Call 07XXX XXX XXX</a>
+        </div>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/image-11.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/image-11.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/image-11.webp" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+    </picture>
+</section>
+
+
+        </main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<!--NOTE: Make sure the section above this footer has the same background color as the footer for a seamless trasition between them-->
+
+<footer id="cs-footer-1783">
+    <!--Contact Info-->
+    <div class="cs-card-group">
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Location</h3>
+                <span>2c Cole Park Rd, Twickenham TW1 1HW</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Working Hours</h3>
+                <span>Monday - Friday: 8am - 6pm </span> <br>
+                <span>Saturday: 9am - 1pm </span><br>
+                <span>Sunday: Closed</span>
+            </div>
+        </div>
+        <div class="cs-card">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+            </picture>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Contact</h3>
+                <a href="tel:+447939549473" class="cs-card-info">Phone/WhatsApp: +44 7939 549473</a>
+                <a href="mailto:info@gbboilers.co.uk" class="cs-card-info">Email: info@gbboilers.co.uk</a>
+            </div>
+        </div>
+        <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+    </div>
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo/image.svg" alt="GB Boilers Logo" width="150" height="150">
+            </a>
+            <p class="cs-text">
+                Your trusted partner for residential and commercial painting, and decorating services.                
+            </p>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+           <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-servicing">Boiler Servicing</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/boiler-installation">Boiler Installation</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/central-heating">Central Heating</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/commercial-gas-engineer">Commercial Gas Services</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="/">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/about">About</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/contact">Contact</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/privacy">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-contact">
+            <div class="cs-contact-info">
+                <span class="cs-topper">Call us anytime</span>
+                <a href="tel:+447939549473" class="cs-contact-link">+44 7939 549473</a>
+            </div>
+            <div class="cs-contact-info">
+                <span class="cs-topper">Visit our location</span>
+                <span>17110 116th Ave SE Unit Renton, WA 38058-5055</span>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2025 - <a href="/" class="cs-credit-link">GB Boilers</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="/terms-and-conditions" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="/privacy" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+    </body>
+     <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "GB Boilers",
+        "image": "https://www.gbboilers.co.uk/assets/images/logo/gbboilers-logo.svg",
+        "@id": "",
+        "url": "https://www.gbboilers.co.uk/",
+        "telephone": "07XXX XXX XXX",
+        "priceRange": "££",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[Your Business Address]",
+            "addressLocality": "Esher",
+            "postalCode": "[Your Postcode]",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "[Your Latitude]",
+            "longitude": "[Your Longitude]"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "[Link to your Google Business Profile]"
+        ]
+        }
+    </script>
+</html>
