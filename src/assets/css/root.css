@@ -918,6 +918,18 @@
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
 /* Mobile */
+@media only screen and (max-width: 1003px) {
+  .cta-left .cta-left-inner {
+    max-width: 100% !important;
+  }
+  .cta-left .cs-button-solid {
+    margin-bottom: 10px !important;
+  }
+  .cta-left,
+  .cta-right {
+    width: 100% !important;
+  }
+}
 @media only screen and (min-width: 0rem) {
   #int-hero {
     z-index: 1;
@@ -1008,10 +1020,6 @@
 @media only screen and (min-width: 0rem) {
   #cta {
     position: relative;
-    padding: 3.125rem 0;
-  }
-  #cta .container {
-    text-align: center;
   }
   #cta picture {
     z-index: -2;
@@ -1036,16 +1044,12 @@
     line-height: 1.2083333333em;
     font-weight: 900;
     color: #fff;
-    text-align: center;
   }
   #cta p {
     opacity: 1;
     margin: auto;
     margin-bottom: 2.25rem;
-    max-width: 37.375rem;
-    width: 96%;
     color: #fff;
-    text-align: center;
   }
   #cta:before {
     z-index: -1;
@@ -1055,59 +1059,8 @@
     content: "";
     opacity: 0.7;
     display: block;
-    background: #000;
     height: 100%;
     width: 100%;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
-    position: relative;
-  }
-  #cta .container {
-    margin: auto;
-    width: 50%;
-  }
-  #cta picture {
-    width: 50%;
-  }
-  #cta picture:before {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
-    z-index: -3;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    content: "";
-    opacity: 1;
-    transform: translateX(-50%);
-    display: block;
-    background: url("/assets/svgs/cta-squares.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 69.25rem;
-    width: 125rem;
   }
 }
 /* Dark Mode */

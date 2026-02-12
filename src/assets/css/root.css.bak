@@ -1090,18 +1090,6 @@
     transform: translateX(-50%);
     width: 90.0625%;
   }
-  #cta picture:before {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
   #cta:before {
     display: none;
   }

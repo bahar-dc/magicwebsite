@@ -165,7 +165,6 @@ p, li, span {
   background-color: var(--dark-bg);
   position: relative;
   overflow: hidden;
-  padding: 5rem 1rem;
   z-index: 1;
 }
 
@@ -173,13 +172,10 @@ p, li, span {
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 80rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 #cta .title {
@@ -188,17 +184,13 @@ p, li, span {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--text-white);
-  text-align: center;
-  max-width: 40rem;
 }
 
 #cta p {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.5em;
   color: var(--text-light);
-  text-align: center;
   margin-bottom: 2rem;
-  max-width: 40rem;
 }
 
 #cta .cs-button-solid {
@@ -207,30 +199,14 @@ p, li, span {
   text-decoration: none;
   display: inline-block;
   padding: 0 1.5rem;
-  margin: 0 auto;
   border-radius: 0.25em;
 }
 
 #cta picture {
-  position: absolute;
+  position: relative;
   display: block;
-  width: 50%;
   height: 100%;
-  top: 0;
-  left: 0;
   z-index: 0;
-}
-
-#cta picture:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.8);
 }
 
 #cta picture img {
@@ -400,4 +376,33 @@ p, li, span {
     #our-approach .cs-picture {
         height: 25rem;
     }
+}
+
+.cta-right,
+.cta-left {
+  width: 50%;
+}
+
+.cta-left {
+  display: flow-root;
+}
+
+.cta-left .cta-left-inner {
+  float: right;
+  max-width: 580px;
+  margin-right: 48px;
+  margin-left: 5%;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.cta-left .cta-left-inner .cs-button-solid {
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+}
+
+.cta-right picture {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 /9;
 }
