@@ -623,7 +623,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     border-radius: 0.25rem;
     margin: 0 auto 4rem;
     background: #fff;
@@ -638,6 +637,7 @@
     list-style: none;
     text-align: left;
     box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
   }
   #reviews .cs-item:last-of-type {
     margin-bottom: 0;
@@ -655,6 +655,7 @@
     font-size: 1rem;
     line-height: 1.5em;
     color: var(--bodyTextColor);
+    flex: 1;
   }
   #reviews .cs-reviewer {
     display: block;
@@ -681,7 +682,6 @@
   #reviews .cs-card-group {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 1rem;
   }
   #reviews .cs-item {
