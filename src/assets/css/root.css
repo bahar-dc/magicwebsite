@@ -383,10 +383,10 @@
     align-items: center;
   }
   #cs-navigation .cs-logo {
-    width: 120px;
+    width: 180px;
     max-width: inherit;
     height: auto;
-    margin: 0 auto 0 0;
+    margin: 0 auto;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0;
