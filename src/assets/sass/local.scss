@@ -881,6 +881,13 @@
   }
 }
 
+@media only screen and (min-width: 500px) and (max-width: 747px) {
+    #hero-1618 picture.cs-background img {
+           top: 0% !important;
+        object-position: 33% 0 !important;
+  }
+}
+
 @media only screen and (max-width: 747px) {
     .accreditation-logos {
         gap: 20px;
