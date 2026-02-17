@@ -714,6 +714,18 @@
   margin-right: auto;
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  #hero-1618 picture.cs-background img {
+    top: 0 !important;
+    object-position: 0 0 !important;
+  }
+}
+@media only screen and (min-width: 748px) and (max-width: 1024px) {
+  #hero-1618 picture.cs-background img {
+    top: 0 !important;
+    object-position: 0 0 !important;
+  }
+}
 @media only screen and (max-width: 747px) {
   .accreditation-logos {
     gap: 20px;
