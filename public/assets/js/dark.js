@@ -9,7 +9,7 @@ function disableDarkMode() {
 }
 
 function isMobile() {
-	return window.matchMedia("(max-width: 768px)").matches;
+	return window.matchMedia("(max-width: 2000px)").matches;
 }
 
 function detectColorScheme() {
