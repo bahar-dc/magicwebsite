@@ -1,0 +1,66 @@
+---
+title: 'Pricing - GB Boilers'
+description: 'GB Boilers'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'pricing/'
+eleventyNavigation:
+    key: Pricing
+    order: 3100
+    <!-- parent: Projects -->
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--   LANDING                   -->
+    <!-- ============================================ -->
+    <section id="int-hero">
+        <h1 id="home-h">Pricing</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/image-11.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/image-11.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/image-11.webp" alt="commercial painting" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+   <section id="sbs-r" style="padding: 100px 15px; background-color: #c42636;">
+        <div class="cs-container" style="max-width:1280px;margin:0 auto">
+            <div class="cs-content mx-600">
+                <span class="cs-topper" style="color: #D4AF37;">Our Pricing</span>
+                <h2 class="cs-title">Plumbing & Gas Service Rates</h2>
+
+                <p style="margin-bottom: 16px;">
+                    <strong>General Plumbing & Gas Works:</strong> £85.00 per hour
+                </p>
+
+                <p style="margin-bottom: 16px;">
+                    <strong>Basic Boiler Service:</strong> £85.00
+                </p>
+
+                <p style="margin-bottom: 16px;">
+                    <strong>Commercial Gas Works:</strong> £120.00 per hour
+                </p>
+
+                <p style="margin-bottom: 16px;">
+                    <strong>Boiler Installations:</strong> Quoted individually based on requirements.
+                </p>
+
+                <p style="margin-bottom: 16px;">
+                    We do not provide quotes for general plumbing works. All general plumbing is charged at our standard hourly rate.
+                </p>
+
+                <p style="margin-bottom: 16px;">
+                    No call-out charge — we only charge our hourly rate.
+                </p>
+
+                <p>
+                    All prices listed above are subject to VAT, which will be added to the final invoice.
+                </p>
+            </div>
+        </div>
+    </section>
+{% include 'components/cta.html' %} {% endblock %}
