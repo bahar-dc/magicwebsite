@@ -43,9 +43,6 @@
     max-width: clamp(25.25rem, 30vw, 32.625rem);
     text-align: left;
   }
-  #cs-contact #cs-form {
-    margin-bottom: 2.5rem;
-  }
   #cs-contact #cs-form label {
     display: flex;
     flex-direction: column;
@@ -60,7 +57,7 @@
   }
   #cs-contact #cs-form .cs-label-message {
     /* 32px - 48px */
-    margin-bottom: clamp(2rem, 6.3vw, 3rem);
+    margin-bottom: 2rem;
   }
   #cs-contact #cs-form input,
   #cs-contact #cs-form textarea,
