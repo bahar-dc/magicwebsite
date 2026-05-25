@@ -65,4 +65,4 @@ This project is proprietary and confidential.
 
 ## Contact
 
-For any inquiries, please contact [Magic Painting](mailto:info@magic-painting.co.uk).
+For any inquiries, please contact [Magic Painting](mailto:gbboilersuk@me.com).
