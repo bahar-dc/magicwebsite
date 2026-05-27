@@ -42,3 +42,8 @@ if (toggleBtn) {
 			: disableDarkMode();
 	});
 }
+light" ? enableDarkMode() : disableDarkMode();
+    });
+  }
+})();
+//# sourceMappingURL=dark.js.map
